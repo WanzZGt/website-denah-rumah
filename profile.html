@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styled.css">
+    <title>profile</title>
+</head>
+<body>
+    <div class="con">
+        <header class="header">
+            <a class="back-home" href="index.html">Kembali ke Beranda</a>
+        </header>
+        <div class="form">
+            <form action="index.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="TTG">Tanggal Lahir:</label>
+                <input type="date" id="TTG" name="TTG" required><br><br>
+
+                <label for="gender" id="gender">Gender:</label>
+                <section>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label><br>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </section> <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="bio">Bio:</label><br>
+                <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="simpan">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

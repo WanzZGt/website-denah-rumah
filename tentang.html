@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kelompok 4</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            background-color: #F4F1DE;
+            color: #333;
+            font-family: "Times New Roman", serif;
+        }
+
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            padding: 18px 24px;
+            background-color: #333;
+            color: #FFFFFF;
+        }
+
+        .page-header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .page-header a {
+            padding: 9px 14px;
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            border-radius: 6px;
+            color: #FFFFFF;
+            text-decoration: none;
+            transition: background-color 0.2s ease, color 0.2s ease;
+        }
+
+        .page-header a:hover,
+        .page-header a:focus-visible {
+            background-color: #FFFFFF;
+            color: #333;
+        }
+
+        .layout {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 32px 24px;
+        }
+
+        .details {
+            padding: 28px;
+            border: 1px solid rgba(51, 51, 51, 0.08);
+            border-radius: 12px;
+            background-color: #FFFFFF;
+            box-shadow: 0 8px 24px rgba(51, 51, 51, 0.08);
+        }
+
+        .details h2 {
+            margin: 0 0 8px;
+            color: #333;
+            font-size: 1.8rem;
+        }
+
+        .intro {
+            margin: 0 0 24px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .member-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .member-card {
+            padding: 18px;
+            border: 1px solid #E5E1D2;
+            border-left: 4px solid #C87941;
+            border-radius: 8px;
+            background-color: #FCFBF7;
+        }
+
+        .member-card h3 {
+            margin: 0 0 12px;
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        .member-card p {
+            margin: 6px 0 0;
+            line-height: 1.45;
+        }
+
+        .member-card strong {
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            .page-header {
+                flex-wrap: wrap;
+                padding: 16px 20px;
+            }
+
+            .layout {
+                padding: 20px 16px;
+            }
+
+            .details {
+                padding: 22px 18px;
+            }
+
+            .member-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="page-header">
+        <h1>Tentang Kelompok 4</h1>
+        <a href="index.html">Kembali ke Beranda</a>
+    </header>
+
+    <main class="layout">
+        <section class="details" aria-labelledby="members-title">
+            <h2 id="members-title">Anggota Kelompok</h2>
+            <p class="intro">Kami adalah Kelompok 4 dari Program Studi Informatika.</p>
+
+            <div class="member-grid">
+                <article class="member-card">
+                    <h3>Miftahhudin Fahri</h3>
+                    <p><strong>NIM:</strong> 12262032</p>
+                    <p><strong>Program Studi:</strong> Informatika</p>
+                </article>
+                <article class="member-card">
+                    <h3>Abdul Rachman Saleh</h3>
+                    <p><strong>NIM:</strong> 12262039</p>
+                    <p><strong>Program Studi:</strong> Informatika</p>
+                </article>
+                <article class="member-card">
+                    <h3>Arjusa Panasah</h3>
+                    <p><strong>NIM:</strong> 12262026</p>
+                    <p><strong>Program Studi:</strong> Informatika</p>
+                </article>
+                <article class="member-card">
+                    <h3>Iwan Setya Pratama</h3>
+                    <p><strong>NIM:</strong> 12262048</p>
+                    <p><strong>Program Studi:</strong> Informatika</p>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
