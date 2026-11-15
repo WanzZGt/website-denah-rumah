@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Dapur dan Ruang Makan</title>
+    <link rel="stylesheet" href="../css/gabung.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Detail Dapur dan Ruang Makan</h1>
+        <a href="../index.html">Kembali</a>
+    </header>
+
+    <main class="layout">
+        <div class="map-panel">
+            <img src="../images/dapur.jpeg" usemap="#image-map" alt="Denah dapur dan ruang makan">
+            <map name="image-map">
+                <area alt="Lemari dapur" title="Lemari dapur" href="#lemari-dapur" coords="88,63,92,0,270,0,269,124,225,119" shape="poly">
+                <area alt="Meja makan" title="Meja makan" href="#meja-makan" coords="78,214,78,194,109,163,194,165,229,193,199,243,109,241" shape="poly">
+                <area alt="Pintu dapur" title="Pintu dapur" href="#pintu-dapur" coords="57,5,0,1,2,22,47,29" shape="poly">
+                <area alt="Jendela" title="Jendela" href="#jendela" coords="272,220,258,229,256,160,269,152" shape="poly">
+            </map>
+        </div>
+
+        <section class="details">
+            <h2>Fasilitas</h2>
+            <p>Pilih bagian pada gambar untuk melihat keterangannya.</p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="lemari-dapur">
+                            <td>Lemari dapur</td>
+                            <td>Digunakan untuk menyimpan bahan makanan dan peralatan memasak.</td>
+                        </tr>
+                        <tr id="meja-makan">
+                            <td>Meja makan</td>
+                            <td>Tempat untuk menyajikan dan menyantap makanan.</td>
+                        </tr>
+                        <tr id="pintu-dapur">
+                            <td>Pintu dapur</td>
+                            <td>Akses untuk masuk dan keluar dari dapur.</td>
+                        </tr>
+                        <tr id="jendela">
+                            <td>Jendela</td>
+                            <td>Membantu sirkulasi udara dan pencahayaan alami.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

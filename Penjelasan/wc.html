@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail WC dan Tempat Cuci</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Detail WC dan Tempat Cuci</h1>
+        <a href="../index.html">Kembali</a>
+    </header>
+
+    <main class="layout">
+        <div class="map-panel">
+            <img src="../images/wc.jpeg" usemap="#image-map" alt="Peta WC dan tempat cuci">
+            <map name="image-map">
+                <area alt="Toilet duduk" title="Toilet duduk" href="#toilet-duduk" coords="70,43,42,43,59,98" shape="poly">
+                <area alt="Mesin cuci" title="Mesin cuci" href="#mesin-cuci" coords="163,45,205,45,205,80,158,80" shape="poly">
+                <area alt="Kamar mandi" title="Kamar mandi" href="#kamar-mandi" coords="2,5,136,3,136,168,0,168" shape="poly">
+                <area alt="Tempat cuci" title="Tempat cuci" href="#tempat-cuci" coords="146,160,149,8,270,0,270,170" shape="poly">
+            </map>
+        </div>
+
+        <section class="details">
+            <h2>Fasilitas</h2>
+            <p>Pilih bagian pada gambar untuk melihat keterangannya.</p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="kamar-mandi">
+                            <td>Kamar mandi</td>
+                            <td>Area untuk mandi dan membersihkan diri.</td>
+                        </tr>
+                        <tr id="toilet-duduk">
+                            <td>Toilet duduk</td>
+                            <td>Fasilitas sanitasi untuk keperluan buang air.</td>
+                        </tr>
+                        <tr id="tempat-cuci">
+                            <td>Tempat cuci</td>
+                            <td>Area untuk mencuci pakaian.</td>
+                        </tr>
+                        <tr id="mesin-cuci">
+                            <td>Mesin cuci</td>
+                            <td>Peralatan untuk membantu mencuci pakaian.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

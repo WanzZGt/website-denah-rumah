@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Ruang Tamu</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Detail Ruang Tamu</h1>
+        <a href="../index.html">Kembali</a>
+    </header>
+
+    <main class="layout">
+        <div class="map-panel">
+            <img src="../images/ruang tamu.jpeg" usemap="#image-map" alt="Denah ruang tamu">
+            <map name="image-map">
+                <area alt="Sofa" title="Sofa" href="#sofa" coords="34,4,151,100" shape="rect">
+                <area alt="Meja" title="Meja" href="#meja" coords="102,54,155,109" shape="rect">
+                <area alt="Televisi" title="Televisi" href="#televisi" coords="49,166,215,179" shape="rect">
+                <area alt="Karpet" title="Karpet" href="#karpet" coords="69,0,236,162" shape="rect">
+            </map>
+        </div>
+
+        <section class="details">
+            <h2>Fasilitas</h2>
+            <p>Pilih bagian pada gambar untuk melihat keterangannya.</p>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="sofa">
+                            <td>Sofa</td>
+                            <td>Tempat duduk untuk bersantai dan menerima tamu.</td>
+                        </tr>
+                        <tr id="meja">
+                            <td>Meja</td>
+                            <td>Tempat meletakkan minuman, makanan, atau barang lainnya.</td>
+                        </tr>
+                        <tr id="televisi">
+                            <td>Televisi</td>
+                            <td>Media hiburan untuk menonton acara dan video.</td>
+                        </tr>
+                        <tr id="karpet">
+                            <td>Karpet</td>
+                            <td>Alas yang menambah kenyamanan dan memperindah ruangan.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
