@@ -1,45 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styled.css">
-    <title>profile</title>
+    <meta name="theme-color" content="#f7f5ef">
+    <title>Profil | Denah Rumah</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="con">
-        <header class="header">
-            <a class="back-home" href="index.html">Kembali ke Beranda</a>
-        </header>
-        <div class="form">
-            <form action="index.html" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
+    <header class="page-header">
+        <h1>Profil Pengunjung</h1>
+        <a href="index.html">← Kembali ke Beranda</a>
+    </header>
 
-                <label for="TTG">Tanggal Lahir:</label>
-                <input type="date" id="TTG" name="TTG" required><br><br>
+    <main class="layout profile-layout">
+        <section class="profile-card" aria-labelledby="profile-title">
+            <!--h2 id="profile-title">Ceritakan tentang dirimu</!--h2>
+            <p class="intro">Isi formulir berikut untuk melengkapi profil pengunjung.</p> -->
 
-                <label for="gender" id="gender">Gender:</label>
-                <section>
-                    <input type="radio" id="male" name="gender" value="male" required>
-                    <label for="male">Male</label><br>
+            <form class="profile-form" action="index.html" method="post">
+                <div class="form-field">
+                    <label for="name">Nama</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+                </div>
 
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label><br>
+                <div class="form-field">
+                    <label for="birth-date">Tanggal lahir</label>
+                    <input type="date" id="birth-date" name="birth-date" required>
+                </div>
 
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Other</label>
-                </section> <br><br>
+                <fieldset class="form-field form-field-full gender-group">
+                    <legend>Jenis kelamin</legend>
+                    <label class="gender-option" for="male">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        Laki-laki
+                    </label>
+                    <label class="gender-option" for="female">
+                        <input type="radio" id="female" name="gender" value="female">
+                        Perempuan
+                    </label>
+                    <label class="gender-option" for="other">
+                        <input type="radio" id="other" name="gender" value="other">
+                        Lainnya
+                    </label>
+                </fieldset>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
+                <div class="form-field form-field-full">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
 
-                <label for="bio">Bio:</label><br>
-                <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
+                <div class="form-field form-field-full">
+                    <label for="bio">Tentang saya</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Tuliskan sedikit tentang dirimu..."></textarea>
+                </div>
 
-                <input type="submit" value="simpan">
+                <button class="submit-button form-field-full" type="submit">Simpan Profil</button>
             </form>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
 </html>

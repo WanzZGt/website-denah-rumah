@@ -1,56 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f5ef">
+    <title>Beranda | Denah Rumah</title>
     <link rel="stylesheet" href="css/stylesheet.css">
-    <title>Website Denah Rumah</title>
 </head>
 <body>
-    <h1></h1>
-    
-    <div class="nav">
-        <div class="logo">
-            <h2></h2>
-        </div>
-        <ul class="data-list">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li class="wisata">Denah
+    <header class="site-header">
+        <nav class="nav" aria-label="Navigasi utama">
+            <a class="logo" href="index.html" aria-label="Denah Rumah, beranda">
+                <span class="logo-mark" aria-hidden="true">D</span>
+                <!-- <span class="logo-name">denah<span>rumah</span></span>  -->
+            </a>
 
-
-            <ul class="list">
-                <a href="denah.html"><li>Denah Rumah</li></a>
-                <!-- <a href="#"><li>Kalimantan</li></a> -->
-                <!-- <a href="#"><li>Bogor</li></a> -->
+            <ul class="data-list">
+                <li><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+                <li class="nav-dropdown">
+                    <a class="nav-link" href="denah.html">Denah <span aria-hidden="true">⌄</span></a>
+                    <ul class="list">
+                        <li><a href="denah.html">Denah Rumah</a></li>
+                    </ul>
+                </li>
+                <li><a class="nav-link" href="tentang.html">Tentang</a></li>
+                <li><a class="nav-link" href="profile.html">Profile</a></li>
             </ul>
-            </li></a>
+        </nav>
+    </header>
 
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span aria-hidden="true"></span> Inspirasi hunian nyaman</p>
+                <h1 id="hero-title">Rumah nyaman dimulai dari <span>denah yang tepat.</span></h1>
+                <p class="hero-description">
+                    Kenali tata ruang rumah dan temukan fungsi setiap sudutnya.
+                    Klik ruangan pada denah untuk melihat penjelasannya.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="denah.html">Jelajahi Denah <span aria-hidden="true">→</span></a>
+                    <a class="button button-secondary" href="tentang.html">Tentang Kami</a>
+                </div>
+                <div class="hero-note">
+                    <span class="note-icon" aria-hidden="true">⌖</span>
+                    <p><strong>Temukan ruang favoritmu</strong><br>Denah interaktif, mudah dijelajahi.</p>
+                </div>
+            </div>
 
-            <a href="tentang.html"><li>Tentang</li></a>
-            <a href="profile.html"><li>Profile</li></a>
-        </ul>
-    </div>
-
-<div class="header">
-    <div class="des-header">
-        <h1>Denah Rumah</h1>
-    </div>
-
-    <div class="gambar">
-        <img src="images/denah.jpg" usemap="#image-map" alt="Denah">
-        </div>
-    <map name="image-map">
-        <area target="" alt="Ruang Keluarga" title="Ruang Keluarga" href="Penjelasan/ruang%20tamu.html" coords="86,597,313,595,315,449,87,452" shape="poly">
-        <!area target="" alt="Kamar Utama" title="Kamar Utama" href="kamar-utama.html" coords="491,452,323,454,324,621,491,621" shape="poly">
-        <area target="" alt="Kamar 1" title="Kamar 1" href="Penjelasan/kamar%201.html" coords="85,443,86,293,261,297,262,445" shape="poly">
-        <area target="" alt="Kamar 2" title="Kamar 2" href="Penjelasan/kamar%202.html" coords="84,290,264,288,261,141,87,143" shape="poly">
-        <area target="" alt="WC" title="WC" href="Penjelasan/wc.html#kamar-mandi" coords="83,139,177,139,175,39,83,37" shape="poly">
-        <area target="" alt="Tempat nyuci" title="Tempat nyuci" href="Penjelasan/wc.html#tempat-cuci" coords="180,40,266,39,267,137,181,138" shape="poly">
-        <area target="" alt="Dapur & Ruang makan" title="Dapur & Ruang makan" href="Penjelasan/dapur.html#lemari-dapur" coords="268,39,492,39,491,241,267,244" shape="poly">
-        <area target="" alt="Ruang Tamu" title="Ruang Tamu" href="Penjelasan/ruang%20keluarga.html" coords="269,447,498,443,493,241,268,245" shape="poly">
-        <area target="" alt="Teras depan" title="Teras depan" href="Penjelasan/teras.html#teras" coords="500,255,539,255,538,443,499,440" shape="poly">
-        <!area target="" alt="Teras belakang" title="Teras belakang" href="#teras-belakang" coords="311,607,311,676,92,679,95,607" shape="poly">
-    </map>
-</div>
+            <div class="plan-card">
+                <div class="plan-card-heading">
+                    <div>
+                        <p class="plan-label">DENAH PILIHAN</p>
+                        <h2>Rumah keluarga</h2>
+                    </div>
+                    <span class="plan-badge">Interaktif</span>
+                </div>
+                <div class="plan-image">
+                    <img src="images/denah.jpg" usemap="#image-map" alt="Denah rumah dengan kamar tidur, ruang keluarga, dapur, kamar mandi, dan teras" width="540" height="720">
+                </div>
+                <map name="image-map">
+                    <area alt="Ruang Keluarga" title="Ruang Keluarga" href="Penjelasan/ruang%20tamu.html" coords="86,597,313,595,315,449,87,452" shape="poly">
+                    <area alt="Teras belakang" title="Teras belakang" href="denah.html#teras-belakang" coords="311,607,311,676,92,679,95,607" shape="poly">
+                    <area alt="Kamar utama" title="Kamar utama" href="denah.html#kamar-utama" coords="491,452,323,454,324,621,491,621" shape="poly">
+                    <area alt="Kamar 1" title="Kamar 1" href="Penjelasan/kamar%201.html" coords="85,443,86,293,261,297,262,445" shape="poly">
+                    <area alt="Kamar 2" title="Kamar 2" href="Penjelasan/kamar%202.html" coords="84,290,264,288,261,141,87,143" shape="poly">
+                    <area alt="WC" title="WC" href="Penjelasan/wc.html#kamar-mandi" coords="83,139,177,139,175,39,83,37" shape="poly">
+                    <area alt="Tempat cuci" title="Tempat cuci" href="Penjelasan/wc.html#tempat-cuci" coords="180,40,266,39,267,137,181,138" shape="poly">
+                    <area alt="Dapur dan ruang makan" title="Dapur dan ruang makan" href="Penjelasan/dapur.html#lemari-dapur" coords="268,39,492,39,491,241,267,244" shape="poly">
+                    <area alt="Ruang Tamu" title="Ruang Tamu" href="Penjelasan/ruang%20keluarga.html" coords="269,447,498,443,493,241,268,245" shape="poly">
+                    <area alt="Teras depan" title="Teras depan" href="Penjelasan/teras.html#teras" coords="500,255,539,255,538,443,499,440" shape="poly">
+                </map>
+                <p class="plan-caption"><span aria-hidden="true">✦</span> Pilih ruangan pada gambar untuk mengenalnya lebih dekat</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

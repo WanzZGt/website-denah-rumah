@@ -1,157 +1,108 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Denah Rumah Interaktif</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-    <header class="page-header">
-        <a href="index.html">Kembali</a>
-    </header>
-<style>
-    body {
-        font-family: sans-serif;
-        margin: 20px;
-    }
-    .container {
-        display: flex;
-        gap: 30px;
-        align-items: flex-start;
-        flex-wrap: wrap;
-    }
-    .bagian-kiri {
-        flex: 0 0 auto;
-    }
-    .bagian-kanan {
-        flex: 1 1 300px;
-        max-width: 500px;
-    }
-    .info-ruangan {
-        display: none;
-        margin-top: 20px;
-        padding: 20px;
-        background-color: #f0f8ff;
-        border-left: 5px solid #007bff;
-        border-radius: 4px;
-        max-width: 500px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    .info-ruangan:target {
-        display: block;
-    }
-
-    .tutup {
-        text-decoration: none;
-        color: white;
-        background-color: #dc3545;
-        padding: 5px 10px;
-        border-radius: 4px;
-        float: right;
-        font-size: 14px;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f7f5ef">
+    <title>Denah Rumah Interaktif</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Contoh Denah Rumah</h1>
-    <div class="container">
+    <header class="page-header">
+        <h1>Jelajahi Denah Rumah</h1>
+        <a href="index.html">← Kembali ke Beranda</a>
+    </header>
 
-        <div class="bagian-kiri">
-        <div class="denah">
-    <img src="images/denah.jpg" usemap="#image-map" alt="Denah">
-        </div>
-    <map name="image-map">
-        <area target="" alt="Ruang Keluarga" title="Ruang Keluarga" href="#ruang-keluarga" coords="86,597,313,595,315,449,87,452" shape="poly">
-        <area target="" alt="Kamar Utama" title="Kamar Utama" href="#kamar-utama" coords="491,452,323,454,324,621,491,621" shape="poly">
-        <area target="" alt="Kamar 1" title="Kamar 1" href="#kamar-1" coords="85,443,86,293,261,297,262,445" shape="poly">
-        <area target="" alt="Kamar 2" title="Kamar 2" href="#kamar-2" coords="84,290,264,288,261,141,87,143" shape="poly">
-        <area target="" alt="WC" title="WC" href="#wc" coords="83,139,177,139,175,39,83,37" shape="poly">
-        <area target="" alt="Tempat nyuci" title="Tempat nyuci" href="#tempat-nyuci" coords="180,40,266,39,267,137,181,138" shape="poly">
-        <area target="" alt="Dapur & Ruang makan" title="Dapur & Ruang makan" href="#dapur" coords="268,39,492,39,491,241,267,244" shape="poly">
-        <area target="" alt="Ruang Tamu" title="Ruang Tamu" href="#ruang-tamu" coords="269,447,498,443,493,241,268,245" shape="poly">
-        <area target="" alt="Teras depan" title="Teras depan" href="#teras-depan" coords="500,255,539,255,538,443,499,440" shape="poly">
-        <area target="" alt="Teras belakang" title="Teras belakang" href="#teras-belakang" coords="311,607,311,676,92,679,95,607" shape="poly">
-    </map>
-</div>
+    <main class="layout interactive-layout">
+        <section class="bagian-kiri" aria-label="Denah interaktif">
+            <div class="denah">
+                <img src="images/denah.jpg" usemap="#image-map" alt="Denah rumah interaktif. Pilih area ruangan untuk melihat keterangannya." width="540" height="720">
+            </div>
+            <map name="image-map">
+                <area alt="Ruang Keluarga" title="Ruang Keluarga" href="#ruang-keluarga" coords="86,597,313,595,315,449,87,452" shape="poly">
+                <area alt="Kamar Utama" title="Kamar Utama" href="#kamar-utama" coords="491,452,323,454,324,621,491,621" shape="poly">
+                <area alt="Kamar 1" title="Kamar 1" href="#kamar-1" coords="85,443,86,293,261,297,262,445" shape="poly">
+                <area alt="Kamar 2" title="Kamar 2" href="#kamar-2" coords="84,290,264,288,261,141,87,143" shape="poly">
+                <area alt="WC" title="WC" href="#wc" coords="83,139,177,139,175,39,83,37" shape="poly">
+                <area alt="Tempat cuci" title="Tempat cuci" href="#tempat-nyuci" coords="180,40,266,39,267,137,181,138" shape="poly">
+                <area alt="Dapur dan ruang makan" title="Dapur dan ruang makan" href="#dapur" coords="268,39,492,39,491,241,267,244" shape="poly">
+                <area alt="Ruang Tamu" title="Ruang Tamu" href="#ruang-tamu" coords="269,447,498,443,493,241,268,245" shape="poly">
+                <area alt="Teras depan" title="Teras depan" href="#teras-depan" coords="500,255,539,255,538,443,499,440" shape="poly">
+                <area alt="Teras belakang" title="Teras belakang" href="#teras-belakang" coords="311,607,311,676,92,679,95,607" shape="poly">
+            </map>
+        </section>
 
-    <div class="bagian-kanan">
-    <div id="ruang-keluarga" class="info-ruangan">
-        <a href="#" class="tutup">✖</a>
-        <h2>Ruang Keluarga</h2>
-        <p>Ruang keluarga adalah pusat berkumpul dan bersantai bersama keluarga, dilengkapi dengan sofa yang nyaman.</p>
-    </div>
+        <section class="bagian-kanan" aria-label="Informasi ruangan">
+            <div class="interaction-hint">
+                <h2>Pilih ruangan</h2>
+                <p>Klik salah satu area pada denah untuk melihat fungsi dan informasi ruangannya.</p>
+            </div>
+            <article id="ruang-keluarga" class="info-ruangan">
+                <a href="#" class="tutup" aria-label="Tutup informasi">Tutup ×</a>
+                <h2>Ruang Keluarga</h2>
+                <p>Ruang keluarga adalah pusat berkumpul dan bersantai bersama keluarga, dilengkapi dengan sofa yang nyaman.</p>
+            </article>
 
-    <div id="kamar-utama" class="info-ruangan">
-        <a href="#" class="tutup">✖</a>
-        <h2>Kamar Tidur utama</h2>
-        <p>Terdapat Kamar tidur utama dengan ukuran yang lebih luas dan tempat tidur ganda. Serta</p>
-        <p>- Tempat tidur: berfungsi untuk tempat beristirahat.</p>
-        <p>- Kasur: alas untuk tidur.</p>
-        <p>- Bantal: penyangga kepala</p>
-        <p>- Selimut: memberikan kehangatan</p>
-        <p>- Karpet: memperindah ruangan</p>
-        <p>- Jendela: memberikan cahaya dan udara alami</p>
-    </div>
+            <article id="kamar-utama" class="info-ruangan">
+                <a href="#" class="tutup" aria-label="Tutup informasi">Tutup ×</a>
+                <h2>Kamar Tidur Utama</h2>
+                <p>Kamar tidur utama berukuran lebih luas dan dilengkapi tempat tidur ganda.</p>
+                <ul>
+                    <li>Tempat tidur dan kasur untuk beristirahat.</li>
+                    <li>Bantal dan selimut untuk kenyamanan.</li>
+                    <li>Karpet untuk memperindah ruangan.</li>
+                    <li>Jendela untuk cahaya dan udara alami.</li>
+                </ul>
+            </article>
 
-    <div id="kamar-1" class="info-ruangan">
-        <a href="#" class="tutup">✖</a>
-        <h2>Kamar 1</h2>
-        <p>Kamar tidur standar untuk anak atau tamu.</p>
-    </div>
+            <article id="kamar-1" class="info-ruangan">
+                <a href="#" class="tutup" aria-label="Tutup informasi">Tutup ×</a>
+                <h2>Kamar 1</h2>
+                <p>Kamar tidur yang nyaman untuk anak atau tamu.</p>
+            </article>
 
-    <div id="kamar-2" class="info-ruangan">
-        <a href="#" class="tutup">✖</a>
-        <h2>Kamar 2</h2>
-        <p>kamar tidur standar untuk saudara dan kerabat jauh ataupun kakek nenek yang sedang berlibur</p>
-    </div>
+            <article id="kamar-2" class="info-ruangan">
+                <a href="#" class="tutup" aria-label="Tutup informasi">Tutup ×</a>
+                <h2>Kamar 2</h2>
+                <p>Kamar tidur tambahan untuk saudara, kerabat, atau keluarga yang berkunjung.</p>
+            </article>
 
-    <div id="wc" class="info-ruangan">
-        <a href="#" class="tutup">✖</a>
-        <h2>Kamar mandi</h2>
-        <p> Terdapat</p>
-        <p>- Kloset: Tempat pembuangan air</p>
-        <p>- Shower: alat untuk mandi</p>
-        <p>- Keramik lantai: permukaan lantai kamar mandi</p>
-        <p>- Saluran pembuangan: mengalirkan air bekas mandi</p>
-    </div>
+            <article id="wc" class="info-ruangan">
+                <a href="#" class="tutup" aria-label="Tutup informasi">Tutup ×</a>
+                <h2>Kamar Mandi</h2>
+                <p>Kamar mandi dilengkapi fasilitas sanitasi, area mandi, dan saluran pembuangan air.</p>
+            </article>
 
-    <div id="tempat-nyuci" class="info-ruangan">
-        <a href="#" class="tutup">✖</a>
-        <h2>Ruang cuci Baju</h2>
-        <p>Terdapat</p>
-        <p>-Area cuci baju: tempat membersihkan baju.</p>
-        <p>-Mesin cuci: fasilitas untuk mencuci baju.</p>
-        <p>-Lantai keramik: mempermudah pembersihan.</p>
-        <p>-Dinding keramik: melindungi dinding dari kelembapan.</p>
-        </div>
+            <article id="tempat-nyuci" class="info-ruangan">
+                <a href="#" class="tutup" aria-label="Tutup informasi">Tutup ×</a>
+                <h2>Ruang Cuci</h2>
+                <p>Area khusus untuk mencuci pakaian dengan permukaan yang mudah dibersihkan.</p>
+            </article>
 
-    <div id="dapur" class="info-ruangan">
-        <a href="#" class="tutup">✖</a>
-        <h2>Dapur & Ruang Makan</h2>
-        <p>Area untuk memasak yang terhubung langsung dengan meja makan keluarga.</p>
-    </div>
+            <article id="dapur" class="info-ruangan">
+                <a href="#" class="tutup" aria-label="Tutup informasi">Tutup ×</a>
+                <h2>Dapur dan Ruang Makan</h2>
+                <p>Area memasak yang terhubung langsung dengan meja makan keluarga.</p>
+            </article>
 
-    <div id="ruang-tamu" class="info-ruangan">
-        <a href="#" class="tutup">✖</a>
-        <h2>Ruang Tamu</h2>
-        <p>Ruang untuk menerima tetamu, berkumpul, berehat dan aktiviti keluarga.</p>
-        <p>Terdapat</p>
-        <p>-Sofa: untuk Bersantai dan juga beristirahat</p>
-        <p>-Karpet: digunakan untuk memberi kenyamanan untuk merasa nyaman saat meletakkan kedua kaki dan sedikit skeindahan saat memandang ke bawah</p>
-    </div>
+            <article id="ruang-tamu" class="info-ruangan">
+                <a href="#" class="tutup" aria-label="Tutup informasi">Tutup ×</a>
+                <h2>Ruang Tamu</h2>
+                <p>Ruang untuk menerima tamu, berbincang, dan berkumpul bersama keluarga.</p>
+            </article>
 
-    <div id="teras-depan" class="info-ruangan">
-        <a href="#" class="tutup">✖</a>
-        <h2>Teras depan</h2>
-        <p>Area berpaving yang terlihat seperti halaman atau teras depan.</p>
-    </div>
+            <article id="teras-depan" class="info-ruangan">
+                <a href="#" class="tutup" aria-label="Tutup informasi">Tutup ×</a>
+                <h2>Teras Depan</h2>
+                <p>Area depan rumah untuk bersantai atau menyambut tamu.</p>
+            </article>
 
-    <div id="teras-belakang" class="info-ruangan">
-        <a href="#" class="tutup">✖</a>
-        <h2>Teras Samping </h2>
-        <p>Area berpaving yang berfungsi sebagai jalur akses atau halaman samping.</p>
-    </div>
-    </div>
-    </div>
+            <article id="teras-belakang" class="info-ruangan">
+                <a href="#" class="tutup" aria-label="Tutup informasi">Tutup ×</a>
+                <h2>Teras Belakang</h2>
+                <p>Area tambahan yang dapat digunakan sebagai jalur akses atau tempat bersantai.</p>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
